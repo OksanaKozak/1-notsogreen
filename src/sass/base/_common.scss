@@ -1,0 +1,52 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: 'Montserrat' sans-serif;
+  background-position: 50% 0;
+  // background-size: cover;
+  // max-width: 1200px;
+  // margin: 0 auto;
+  background-repeat: repeat-y;
+  background-image: url(../images/backgrund/backmobile.jpg);
+
+  @include retina {
+    background-image: url(../images/backgrund/backmobilex2.jpg);
+  }
+
+  @include tablet {
+    background-image: url(../images/backgrund/backtablet.jpg);
+
+    @include retina {
+      background-image: url(../images/backgrund/backtabletx2.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/backgrund/backdesktop.jpg);
+    background-position: 50% 390px;
+
+    @include retina {
+      background-image: url(../images/backgrund/backdesktopx2.jpg);
+      background-position: 50% 390px;
+    }
+  }
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+img {
+  display: block;
+  // width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+a,
+button,
+address,
+label {
+  cursor: url(../images/about/vector.png), pointer;
+}
